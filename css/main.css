@@ -157,10 +157,10 @@ a{
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
+    -ms-flex-align: center; 
     -webkit-align-items: center;
     align-items: center;
-
+    
   }
 
   .swiper-slide img {
@@ -168,5 +168,4 @@ a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-width:100%
   }
