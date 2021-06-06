@@ -170,6 +170,7 @@ a{
  
 .slick-prev {
     left: 20px;
+    text-align: left;
 }
  
 .slick-prev:after {
@@ -194,4 +195,19 @@ a{
 .slick-prev:hover:after,
 .slick-next:hover:after {
     color: #7e7e7e;
+}
+
+/* footer */
+.mfoot_1{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.mfoot_2{
+    margin-top: -125px;
+    margin-left: 700px;
+}
+.mfoot_3{
+    margin-top: -125px;
+    float: right;
+    margin-right: 100px;
 }

@@ -1,0 +1,9 @@
+.login_naver{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-weight: bold;
+    background-color: #27D34A;
+    width: 350px;
+    height: 50px;
+    border: 1px solid #27d34a;
+    border-radius:15%;
+}
