@@ -12,9 +12,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
+    <!--메인로고-->
     <img src="img/login_mainlogo.jpg" alt="" style="height: 210px; width: 210px;margin: 0 auto; display: block; margin-top: 100px;">
+
+    <!--상단 네이버 연결-->
     <div class = "login_naver">
-        네이버로 시작하기
+        <a href="https://www.naver.com/" style="text-decoration: none;"><img src="img/naver.png" alt="" class = "img_naver"><span class = "login_naver_txt">네이버로 시작하기</span></a>
     </div>
+    <div class="hr-sect">또는</div>
+
+    <!--로그인, php로 연결-->
+    <form method="POST">
+        <center><table>
+            <tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="아이디" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;font-family: 'Nanum Gothic', sans-serif;
+                        font-size: 12px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="비밀번호" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;     font-family: 'Nanum Gothic', sans-serif;
+                        font-size: 12px;">
+                    </td>
+                </tr>
+            </tr>
+        </table></center>
+        <center><div style="margin-right: 420px; margin-top: 10px;">
+            <input type="checkbox"><span class = "login_txt">로그인상태유지</span>
+        </div></center>
+        <div class = "login_button">
+            <button type="submit" class = "login_btn_txt">로그인</button>
+        </div>
+        <div class = "refer" style="margin-bottom: 30px;">
+            <a href="#" style="text-decoration: none;"><span class = "join">회원가입</span></a>
+            <a href="#" style="text-decoration: none;"><span class = "id_refer">아이디 · 비밀번호 찾기</span></a>
+        </div>
+        <div class="hr-sect-02">또는</div>
+        <div class = "no_member">
+            <a href="https://www.naver.com/" style="text-decoration: none;"><span class = "no_member_txt">비회원 주문배송 조회</span></a>
+        </div>
+    </form>
+
 </body>
 </html>

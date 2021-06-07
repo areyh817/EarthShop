@@ -1,9 +1,163 @@
 .login_naver{
+    position: relative;
+    background-color: #27D34A;
+    width: 520px;
+    height: 45px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    float: center;
+    text-decoration: none;
+}
+.img_naver{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.login_naver_txt{
+    position: absolute;
     font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
     font-weight: bold;
-    background-color: #27D34A;
-    width: 350px;
-    height: 50px;
-    border: 1px solid #27d34a;
-    border-radius:15%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 또는 부분 */
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: #656565;
+    font-size: 13px;
+    width: 580px;
+    margin-top: 15px;
+    margin: 0 auto;
+  }
+  .hr-sect::before,
+  .hr-sect::after {
+    content: "";
+    flex-grow: 1;
+    background: #e2e2e2;
+    height: 1.5px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 35px;
+  }   
+/* 로그인 테이블 */
+table {
+    width: 520px;
+    margin-top: 30px;
+    border: 0.8px solid  #e2e2e2;
+    border-collapse: collapse;
+    
+  }
+  th, td {
+    margin-top: 30px;
+    border: 0.8px solid  #e2e2e2;
+    padding: 10px;
+  }
+  /* 로그인 상태 유지 */
+  .login_txt{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    color: #656565;
+    
+  }
+  input[type = "checkbox"]{
+      cursor:pointer;
+      zoom: 120%;
+  }
+  /* 로그인 버튼 */
+  button{
+      cursor: pointer;
+      outline: 0;
+      border:0;
+      background-color: white;
+
+  }
+  .login_button{
+    position: relative;
+    background-color: white;
+    width: 520px;
+    height: 45px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    float: center;
+    border:#00913A solid 3px;
+    text-decoration: none;
+}
+.login_btn_txt{
+    position: absolute;
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-weight: bold;
+    color: #00913A;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 회원가입 안내 및 아이디, 비밀번호 찾기 */
+.join{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13px;
+    color: #656565;
+    margin-left: 500px;
+    padding-right: 320px;
+}
+.id_refer{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13px;
+    color: #656565;
+}
+
+/* 로그인 밑 또는 부분 */
+.hr-sect-02 {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: #656565;
+    font-size: 13px;
+    width: 580px;
+    margin-top: 15px;
+    margin: 0 auto;
+  }
+  .hr-sect-02::before,
+  .hr-sect-02::after {
+    content: "";
+    flex-grow: 1;
+    background: #e2e2e2;
+    height: 1.5px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 35px;
+  }   
+  /* 비회원 처리 */
+  .no_member{
+    position: relative;
+    background-color: #8393A7;
+    width: 520px;
+    height: 40px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    float: center;
+    text-decoration: none;
+}
+.no_member_txt{
+    position: absolute;
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
