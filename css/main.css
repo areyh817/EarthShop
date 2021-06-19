@@ -133,7 +133,7 @@ a{
     font-size: 17px;
     font-weight: bold;
     color: #656565;
-    margin-left: 105px;
+    margin-left: 160px;
     margin-top: 100px;
 }
 .new{
@@ -177,7 +177,7 @@ a{
     content: "<";
     font: 35px/1 'Nanum Gothic', sans-serif;
     font-weight: bold;
-    padding-left: 35px;
+    padding-left: 0px;
 }
  
 .slick-next {
@@ -189,7 +189,7 @@ a{
     content: ">";
      font: 35px/1 'Nanum Gothic', sans-serif;
      font-weight: bold;
-     padding-right: 35px;
+     padding-right: 65px;
 }
  
 .slick-prev:hover:after,
@@ -197,6 +197,25 @@ a{
     color: #7e7e7e;
 }
 
+/* slider가격 */
+.slider_menu_txt1{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-size: 13px;
+    color: #656565;
+}
+.slider_menu_price1{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-size: 13px;
+    color: #00913a;
+    font-weight: bold;
+}
+.slider_menu_sale{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-size: 13px;
+    color: #a3a3a3;
+    text-decoration: line-through;
+    padding-right: 5px;
+}
 /* footer */
 .mfoot_1{
     margin-top: 50px;
