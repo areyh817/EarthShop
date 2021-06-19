@@ -4,8 +4,8 @@
 /* font-family: 'Nanum Gothic', sans-serif; */
 
 /* main */
-.main{
-    
+a:hover{
+    cursor: pointer;
 }
 /* 상단 이미지 로고 */
 .mainLogo{
