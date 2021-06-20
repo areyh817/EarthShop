@@ -7,6 +7,13 @@
 a:hover{
     cursor: pointer;
 }
+
+/* 드래그시 background색상 변경 */
+::selection {
+    background: #00913a;
+    color: #fff;
+ }
+
 /* 상단 이미지 로고 */
 .mainLogo{
     width : 115px;
@@ -218,15 +225,27 @@ a{
 }
 /* footer */
 .mfoot_1{
-    margin-top: 50px;
-    margin-left: 100px;
+    margin-top: 20px;
+    margin-left: 160px;
+    padding-bottom: 0;
+}
+.mfoot_12{
+    margin-top: -115px;
+    margin-left: 550px;
 }
 .mfoot_2{
-    margin-top: -125px;
-    margin-left: 700px;
+    margin-top: -132px;
+    margin-left: 950px;
 }
 .mfoot_3{
-    margin-top: -125px;
-    float: right;
-    margin-right: 100px;
+    margin-top: -94px;
+    margin-left: 1230px;
+}
+.foot_mouse{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; font-size: 11px; 
+    color: #656565;
+    text-decoration: none;
+}
+.foot_mouse:hover{
+    color: #656565;
 }
