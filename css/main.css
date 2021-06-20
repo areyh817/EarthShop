@@ -182,7 +182,7 @@ a{
  
 .slick-prev:after {
     content: "<";
-    font: 35px/1 'Nanum Gothic', sans-serif;
+    font: 25px/1 'Nanum Gothic', sans-serif;
     font-weight: bold;
     padding-left: 0px;
 }
@@ -194,7 +194,7 @@ a{
  
 .slick-next:after {
     content: ">";
-     font: 35px/1 'Nanum Gothic', sans-serif;
+     font: 25px/1 'Nanum Gothic', sans-serif;
      font-weight: bold;
      padding-right: 65px;
 }
