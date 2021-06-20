@@ -223,6 +223,21 @@ a{
     text-decoration: line-through;
     padding-right: 5px;
 }
+
+/* new, sale */
+.newimg{
+    width: 45px;
+    height: 20px;
+    margin-top: 5px;
+}
+.newimg2{
+    width: 45px;
+    height: 20px;
+    margin-top: 5px;
+    padding-right: 2px;
+    float: left;
+}
+
 /* footer */
 .mfoot_1{
     margin-top: 20px;
