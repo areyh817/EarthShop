@@ -5,13 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--css link-->
-    <link rel="stylesheet" href="menulistcss/flower.css">
+    <link rel="stylesheet" href="css/flower.css">
     <!--아이콘 및 이름-->
     <link href="https://cdn.imweb.me/thumbnail/20200106/f13e1a60db177.png" rel="shortcut icon" type="image/x-icon">
     <title>지구샵</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
+    <!--상단 main Logo-->
+    <div class = "main">
+        <a href="#">
+            <img src="https://cdn.imweb.me/thumbnail/20210118/ca5f906b571ba.png" alt="" class = "mainLogo">
+        </a>
+     <!--nav-->
+      <nav class = "navMain">
+        <a href="join.html" style="text-decoration:none">
+          <span class = "joinNav">Join</span>
+        </a>
+        <a href="login.html" style="text-decoration:none">
+          <span class = "loginNav">Login</span>
+        </a>
+        <a href="" style="text-decoration:none">
+          <span class = "cartNav">Cart</span>
+        </a>
+        <a href="">
+          <img src="img/loupe.png" alt="" class = "searchimg">
+        </a>
+      </nav>
+    </div>
+    
+    <!--메뉴바-->
+    <nav>
+        <div class = "mainNav" style="z-index: 2;">
+            <a href="" style="text-decoration:none">
+                <span class = "nav1">ABOUT</span>
+            </a>
+            <a href="" style="text-decoration:none">
+                <span class = "nav2">SHOP</span>
+            </a>
+            <a href="" style="text-decoration:none">
+                <span class = "nav3">JOURNAL</span>
+            </a>
+            <a href="" style="text-decoration:none">
+                <span class = "nav4">BOARD</span>
+            </a>
+            <a href="" style="text-decoration:none">
+                <span class = "nav5">CONTACT</span>
+            </a>
+        </div>
+    </nav>
+
+    <!--HOME > SHOP > MENU-->
+    <div id = "hsm">
+        <a href="/index.html" style="text-decoration: none;">
+            <span class = "hstxt">HOME&emsp;>&emsp;</span>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <span class = "hstxt">SHOP&emsp;>&emsp;</span>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <span class = "basictxt">LIVING</span>
+        </a>
+    </div>
+
+    <!--이미지 넘어가게하는 것-->
     <div id="content">
         <div id="bigImages">
             <img src="https://cdn.imweb.me/thumbnail/20210602/621dbc9c27051.jpg" alt="" id="big">
@@ -22,6 +79,7 @@
             <img src="https://cdn.imweb.me/thumbnail/20210602/5aef18d782bb2.jpg" alt="" class="small">
         </div>
     </div>
-    <script src = ""></script>
+
+    <script src="js/flower.js"></script>
 </body>
 </html>
