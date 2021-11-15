@@ -39,6 +39,7 @@
     font-weight: bold;
     color: #00913a;
     text-align: center;
+    padding-left: 15px;
     margin-left: 15px;
 }
 nav{
@@ -91,4 +92,13 @@ img:hover{
     font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
     font-size: 12.5px;
     color:#656565;
+}
+.info_box{
+    padding-left: 830px;
+}
+.product_name{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-size: 16px;
+    color: #656565;
+    font-weight: 400;
 }
