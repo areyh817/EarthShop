@@ -21,25 +21,25 @@
     <img src="img/profile-user.png" alt="" style="width: 60px;height: 59px; display: block; margin:0 auto; margin-top: 50px;">
 
     <!--로그인, php로 연결-->
-    <form method="POST">
+    <form method="POST" action="php/join.php">
         <center><table>
             <tr>
                 <tr>
                     <td>
                         <input type="text" placeholder="이메일" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;font-family: 'Nanum Gothic', sans-serif;
-                        font-size: 12px;">
+                        font-size: 12px;" id = "email" name = "email">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <input type="password" placeholder="비밀번호" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;     font-family: 'Nanum Gothic', sans-serif;
-                        font-size: 12px;">
+                        font-size: 12px;" id = "pw" name = "pw">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <input type="password" placeholder="비밀번호 확인" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;     font-family: 'Nanum Gothic', sans-serif;
-                        font-size: 12px;">
+                        font-size: 12px;" id = "pwchk" name = "pwchk"> 
                     </td>
                 </tr>
             </tr>
@@ -50,15 +50,15 @@
                 <tr>
                     <td>
                         <input type="text" placeholder="이름" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;font-family: 'Nanum Gothic', sans-serif;
-                        font-size: 12px;">
+                        font-size: 12px;" id = "name" name = "name">
                     </td>
                 </tr>
             </tr>
         </table></center>
         <span class = "sex">성별</span>
         <div class = "sex_inline">
-            <input type="radio" name = "sex" value="남자"><span class = "ck_sex"> 남자</span><br>
-            <input type="radio" name = "sex" value="여자"><span class = "ck_sex"> 여자</span>
+            <input type="radio" name = "gender[]" value="남자"><span class = "ck_sex"> 남자</span><br>
+            <input type="radio" name = "gender[]" value="여자"><span class = "ck_sex"> 여자</span>
         </div>
         <div class = "login_button">
             <button type="submit" class = "login_btn_txt">가입하기</button>
