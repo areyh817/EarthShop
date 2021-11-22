@@ -1,12 +1,17 @@
 <?php
+echo "값 들어오는지 확인";
+$url = "localhost";
+$id = "root";
+$password="111111";
+$db = "earth";
 
-include ("db_conn.php");
+$conn = mysqli_connect($url,$id,$password,$db);
 
 // html로부터 값 가져오기
 $uemail = $_POST["email"];
-$upw = $_POST["upw"];
+$upw = $_POST["pw"];
 $upwchk = $_POST["pwchk"];
-$uname = $_POST["uname"];
+$uname = $_POST["name"];
 $ugender = $_POST["gender"];
 
 
