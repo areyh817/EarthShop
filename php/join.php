@@ -17,4 +17,6 @@ $ugender = $_POST["gender"];
 $sql = "insert into user(name, uid, pw, gender) values('$uname', '$uid', '$upw', '$ugender')";
 mysqli_query($conn, $sql);
 
+
+
 ?>
