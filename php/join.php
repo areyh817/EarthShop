@@ -14,7 +14,6 @@ $upwchk = $_POST["pwchk"];
 $uname = $_POST["name"];
 $ugender = $_POST["gender"];
 
-
 $sql = "insert into user(name, email, pw, gender) values('$uname', '$uemail', '$upw', '$ugender')";
 mysqli_query($conn, $sql);
 
