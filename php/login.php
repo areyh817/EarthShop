@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $url = "localhost";
 $id = "root";
 $password="111111";
@@ -14,11 +16,13 @@ $conn = mysqli_connect($url,$id,$password,$db);
 
         $sql="SELECT * FROM user where uid='$uid'&&pw='$upw'";
         if($result=mysqli_fetch_array(mysqli_query($conn,$sql))){
+          $sql="SELECT name FROM user where uid='$uid'";
+          $uname=mysqli_fetch_array(mysqli_query($conn,$sql))
+          $_SESSION['user_id'] = $uid;
+          $_SESSION['user_name'] = $uname;
           echo "사용자 이름= $uid";
           echo "</br>로그인 성공";
-        } else{
-          echo "login fail";
-        }
+        } else echo "아이디 또는 비밀번호가 일치하지 않습니다.";
       }
 
 
