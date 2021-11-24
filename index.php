@@ -35,15 +35,48 @@
         </a>
      <!--nav-->
       <nav class = "navMain">
-        <a href="join.html" style="text-decoration:none">
+        <?php
+        session_start();
+
+        $url = "localhost";
+        $id = "root";
+        $password="111111";
+        $db = "earth";
+
+        $conn = mysqli_connect($url,$id,$password,$db);
+
+        if(isset($_SESSION['user_id'])){
+
+          ?><a href="mypage.php" style="text-decoration:none">
+          <span class = "joinNav">My page</span></a>
+
+        <?php } else { ?>
+
+          <a href="join.html" style="text-decoration:none">
           <span class = "joinNav">Join</span>
-        </a>
-        <a href="login.html" style="text-decoration:none">
+          </a>
+        <?php } 
+
+        if(isset($_SESSION['user_id'])){
+          ?><a href="cart.php" style="text-decoration:none">
+          <span class = "loginNav">Cart</span>
+          </a>
+        <?php } else { ?>
+          <a href="login.html" style="text-decoration:none">
           <span class = "loginNav">Login</span>
+          </a>
+        <?php }
+
+        if(isset($_SESSION['user_id'])){
+          ?> <a href="logout.php" style="text-decoration:none">
+          <span class = "cartNav">Logout</span>
         </a>
-        <a href="" style="text-decoration:none">
+        <?php } else { ?>
+          <a href="" style="text-decoration:none">
           <span class = "cartNav">Cart</span>
         </a>
+        <?php } ?>
+      
         <a href="">
           <img src="img/loupe.png" alt="" class = "searchimg">
         </a>
