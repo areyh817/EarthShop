@@ -122,7 +122,8 @@
     <div class = "mypage_profile_info">
       <span class = "eco_lover"><b>Eco Lover</b></span>
       <span class = "people_hello">조혜라 님 안녕하세요.</span><br>
-      <span class = "level_info">구매금액 100,000원 달성 시<br>Earth Lover 로 승급됩니다.</span>
+      <span class = "level_info">구매금액 100,000원 달성 시</span><br>
+      <span class="level_info2">Earth Lover 로 승급됩니다.</span>
     </div>
 </body>
 </html>
