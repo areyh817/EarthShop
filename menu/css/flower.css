@@ -95,10 +95,45 @@ img:hover{
 }
 .info_box{
     padding-left: 830px;
+    line-height: 20px;
 }
 .product_name{
     font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
-    font-size: 16px;
+    font-size: 15px;
     color: #656565;
+    font-weight: 600;
+}
+.product_price{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-size: 16px;
+    color: #00913a;
+    margin-top: 5px;
+
+}
+hr{
+    width:455px;
+    height: 1px;
+    float: left;
+    background-color: rgb(233, 233, 233);
+    border: 0px;
+}
+.product_desc{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-size: 12px;
+    color: #656565;
+    line-height: 18px;
     font-weight: bold;
+}
+.product_detail{
+    clear: right;
+    font-family: 'NanumSquare', sans-serif !important;
+    font-size: 12px;
+    color: #656565;
+    font-weight: 800;
+}
+.product_detail_an{
+    font-family: 'NanumSquare', sans-serif !important;
+    font-size: 12px;
+    color: #656565;
+    float:inline-end
 }
