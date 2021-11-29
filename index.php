@@ -46,7 +46,10 @@
         $conn = mysqli_connect($url,$id,$password,$db);
 
         if(isset($_SESSION['user_id'])){
-
+          if($_SESSION['user_id'] == "admin"){?><a href="admin.html" style="text-decoration:none">
+          <span class = "joinNav">admin page</span></a>
+          <?php
+          }else
           ?><a href="mypage.php" style="text-decoration:none">
           <span class = "joinNav">My page</span></a>
 
