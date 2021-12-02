@@ -20,7 +20,7 @@
         <span class = "product_add_desc">상품 추가는 관리자만 가능하며, 빈칸 없이 채워주세요 !</span>
     </div>
 
-    <form method="POST" action="insert2.php">
+    <form method="POST" action="insert2.php" enctype="multipart/form-data">
         <center><table>
             <tr>
                 <tr>
@@ -58,7 +58,7 @@
                         <input type="file" name = "img">
                     </td>
                 </tr>
-                <!--<tr>
+                <tr>
                     <td>
                         <input type="file" name = "img2">
                     </td>
@@ -67,7 +67,7 @@
                     <td>
                         <input type="file" name = "img3">
                     </td>
-                </tr>-->
+                </tr>
                 <button type="submit" style="background-color : #2DB400">추가하기</button>
             </tr>
         </table></center>
