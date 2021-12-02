@@ -1,0 +1,66 @@
+/* 기본색 : #00913a */
+/* font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* font-family: 'Nanum Gothic', sans-serif; */
+
+/* main */
+a:hover{
+    cursor: pointer;
+}
+
+/* 드래그시 background색상 변경 */
+::selection {
+    background: #00913a;
+    color: #fff;
+ }
+
+/* 상단 이미지 로고 */
+.mainLogo{
+    width : 115px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+/* 로그인 nav */
+.joinNav, .loginNav, .cartNav{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color:rgb(77, 77, 77);
+    text-align: right;
+    margin-top: 0px;
+    padding-right: 15px;
+}
+.searchimg{
+    width: 18px;
+    height: 18px;
+}
+.navMain{
+    margin-top: -30px;
+    margin-right: 30px;
+    float: right;
+}
+/* 메뉴 nav */
+.nav1, .nav2, .nav3, .nav4, .nav5{
+    font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; 
+    font-size: 17px;
+    font-weight: bold;
+    color: #00913a;
+    text-align: center;
+    margin-left: 15px;
+}
+nav{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.mainNav{
+    margin-top: 20px;
+    
+}
