@@ -114,7 +114,7 @@
 
 
           ?>
-          <div class="slider" style = "padding-right: 20px; margin-top : 30px; float:left; margin-left:100px;" >
+          <div class="slider" style = "padding-right: 20px; margin-top : 30px; float:left; padding-left:100px;" >
               <a href='pduct.php?idx=<?php echo $re[0]; ?>'  style="text-decoration: none;">        
                 <img src="<?php echo $re[6]?>" onmouseover="this.src='<?php echo $re[7]?>'" onmouseout="this.src='<?php echo $re[6]?>'" style="width: 256px;"><br>
                 <span class = "slider_menu_txt1"><?php echo $re[1]?><span class="slider_menu_price1"><br><?php echo $re[4]?></span></span>
