@@ -13,3 +13,5 @@ function changepic(){       // 사진 바꾸는 함수
 let smallPicAttribute = this.getAttribute("src");
 bigPic.setAttribute("src", smallPicAttribute);
 }
+
+function btn(){ alert('준비 중입니다.'); }

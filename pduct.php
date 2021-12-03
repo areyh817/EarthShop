@@ -139,26 +139,31 @@ $idx = $_GET['idx'];
             ?>
             
             <div id="bigImages">
-                <img src="https://cdn.imweb.me/thumbnail/20210602/621dbc9c27051.jpg" alt="" id="big">
+                <img src="<?php echo $re[6] ?>" alt="" id="big">
             </div>
             <div id="smallImages">
                 <img src="<?php echo $re[6] ?>" alt="" class="small">
                 <img src="<?php echo $re[7] ?>" alt="" class="small">
-                <img src="https://cdn.imweb.me/thumbnail/20210602/5aef18d782bb2.jpg" alt="" class="small"> 
+                <img src="<?php echo $re[7] ?>" alt="" class="small"> 
             </div>
         </div>
         <br>
-        <div class = "info_box" style="padding-top: 40px;">
+        <div class = "info_box" style="padding-top: 20px;">
             <span class = "product_name"><?php echo $re[1] ?></span>
-            <p class = "product_price"><?php echo $re[4] ?></p>
+            <p class = "product_price"><?php echo $re[4] ?>원</p>
             <hr><br>
-            <p class = "product_desc"><?php echo $re[2]?></p> 
+            <span class = "product_desc" style = "margin-top : 20px;"><?php echo $re[2]?></span><br><br> 
             <span class = "product_detail" style="line-height: 1;">원산지</span>
             <span class = "product_detail_an" style="line-height: 1;"><?php echo $re[3]?></span><br>
             <span class = "product_detail" style="line-height: 1;">브랜드</span>
-            <span class = "product_detail_an"><?php echo $re[5]?></span>
+            <span class = "product_detail_an"><?php echo $re[5]?></span><br>
+            <span class = "product_detail" style="line-height: 1;">구매혜택</span>
+            <span class = "product_detail_an">160포인트 적립예정</span><br>
+            <span class = "product_detail" style="line-height: 1;">브랜드</span>
+            <span class = "product_detail_an">3,000원 (50,000원 이상 무료배송)</span><br>
             
-                
+            <button style="border-radius: 30px; color:#fff; width: 150px; margin-top : 200px;" onclick="javascript:btn()">BUY</button>
+            <button style="border-radius: 30px; color:#656565; width: 300px; margin-top : 200px; background-color:#fff; border:1px solid #ccc;">CART</button>       
         </div>
     </div>
     <?php } ?>
