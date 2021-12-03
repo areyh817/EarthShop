@@ -116,29 +116,28 @@ $idx = $_GET['idx'];
         </a>
     </div>
 
-
-    <?php
-
-        $url = "localhost";
-        $id = "root";
-        $password="111111";
-        $db = "earth";
-
-        $conn = mysqli_connect($url,$id,$password,$db);
-
-        $sql="select * from product where id=".$idx;
-        $result=mysqli_query($conn,$sql);
-        $num=mysqli_num_rows($result);
-
-        for($i=0;$i<$num;$i++) {
-
-        $re=mysqli_fetch_array($result);
-
-
-        ?>
-
     <div>
         <div id="content" style="float : left">
+        <?php
+
+            $url = "localhost";
+            $id = "root";
+            $password="111111";
+            $db = "earth";
+
+            $conn = mysqli_connect($url,$id,$password,$db);
+
+            $sql="select * from product where pid='$idx'";
+            $result=mysqli_query($conn,$sql);
+            $num=mysqli_num_rows($result);
+
+            for($i=0;$i<$num;$i++) {
+
+            $re=mysqli_fetch_array($result);
+
+
+            ?>
+            
             <div id="bigImages">
                 <img src="https://cdn.imweb.me/thumbnail/20210602/621dbc9c27051.jpg" alt="" id="big">
             </div>
@@ -148,24 +147,21 @@ $idx = $_GET['idx'];
                 <img src="https://cdn.imweb.me/thumbnail/20210602/5aef18d782bb2.jpg" alt="" class="small"> 
             </div>
         </div>
+        <br>
         <div class = "info_box" style="padding-top: 40px;">
             <span class = "product_name"><?php echo $re[1] ?></span>
             <p class = "product_price"><?php echo $re[4] ?></p>
             <hr><br>
-            <p class = "product_desc">수련화 모양의 핸드메이드 도자기 인센스 홀더입니다.<br>
-                작고 가벼운 디자이능로 어느 공간에서도 분위기 있게 사용할 수 있어요.</p> 
+            <p class = "product_desc"><?php echo $re[2]?></p> 
             <span class = "product_detail" style="line-height: 1;">원산지</span>
-            <span class = "product_detail_an" style="line-height: 1;">국산</span>
-            <span class = "product_detail" style="line-height: 1;">원산지</span>
-            <span class = "product_detail_an">국산</span>
-            <span class = "product_detail" style="line-height: 1;">원산지</span>
-            <span class = "product_detail_an">국산</span>
-            <span class = "product_detail" style="line-height: 1;">원산지</span>
-            <span class = "product_detail_an">국산</span>
+            <span class = "product_detail_an" style="line-height: 1;"><?php echo $re[3]?></span><br>
+            <span class = "product_detail" style="line-height: 1;">브랜드</span>
+            <span class = "product_detail_an"><?php echo $re[5]?></span>
             
                 
         </div>
     </div>
+    <?php } ?>
 
 
     <script src="pdcut.js"></script>

@@ -118,12 +118,32 @@
     <div class = "mypage_profile_box">
           <img src="https://www.jigushop.co.kr/common/img/default_profile.png" alt="" class = "mypage_profile_img">
     </div>
-    
+    <?php
+
+    $url = "localhost";
+    $id = "root";
+    $password="111111";
+    $db = "earth";
+
+    $conn = mysqli_connect($url,$id,$password,$db);
+
+    $sql="select * from product where pid='$_SESSION['user_id']'";
+    $result=mysqli_query($conn,$sql);
+    $num=mysqli_num_rows($result);
+
+    for($i=0;$i<$num;$i++) {
+
+    $re=mysqli_fetch_array($result);
+
+
+    ?>
     <div class = "mypage_profile_info">
       <span class = "eco_lover"><b>Eco Lover</b></span>
-      <span class = "people_hello">조혜라 님 안녕하세요.</span><br>
+      <span class = "people_hello"><?php echo $re[1] ?> 님 안녕하세요.</span><br>
       <span class = "level_info">구매금액 100,000원 달성 시</span><br>
       <span class="level_info2">Earth Lover 로 승급됩니다.</span>
     </div>
+
+    <?php } ?>
 </body>
 </html>
