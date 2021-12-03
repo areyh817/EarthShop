@@ -84,7 +84,7 @@
             <a href="" style="text-decoration:none">
                 <span class = "nav1">ABOUT</span>
             </a>
-            <a href="" style="text-decoration:none">
+            <a href="menu.php" style="text-decoration:none">
                 <span class = "nav2">SHOP</span>
             </a>
             <a href="" style="text-decoration:none">
