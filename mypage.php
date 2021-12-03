@@ -126,8 +126,8 @@
     $db = "earth";
 
     $conn = mysqli_connect($url,$id,$password,$db);
-
-    $sql="select * from user where uid='$_SESSION['user_id']'";
+    $userid = $_SESSION['user_id'];
+    $sql="select * from user where uid='$userid'";
     $result=mysqli_query($conn,$sql);
     $num=mysqli_num_rows($result);
 
