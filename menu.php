@@ -93,28 +93,41 @@
         </div>
     </nav>
 
-    <div style="margin-left:100px;">
+    <table>
+      <tr>
+      <?php
+
+      $url = "localhost";
+      $id = "root";
+      $password="111111";
+      $db = "earth";
+
+      $conn = mysqli_connect($url,$id,$password,$db);
+
+      $sql="select * from product";
+      $result=mysqli_query($conn,$sql);
+      $num=mysqli_num_rows($result);
+
+      for($i=0;$i<$num;$i++) {
+
+      $re=mysqli_fetch_array($result);
+
+
+      ?>
+        <tr style = "margin-left:100px; margin-top : 30px; float:left; padding-top : 30px;">
+          <td>
+            <a href='pduct.php?idx=<?php echo $re[0]; ?>'  style="text-decoration: none;">        
+                <img src="<?php echo $re[6]?>" onmouseover="this.src='<?php echo $re[7]?>'" onmouseout="this.src='<?php echo $re[6]?>'" style="width: 256px;"><br>
+                <span class = "slider_menu_txt1"><?php echo $re[1]?><span class="slider_menu_price1"><br><?php echo $re[4]?></span></span>
+                <img src="img/new4.png" alt="" class="newimg">
+          </td>
+        </tr>
+      </tr>
+      <?php } ?>
+    </table>
+    <!--<div style="margin-left:100px; padding-left:20px;">
         <div class="row row-cols-1 row-cols-md-3 g-4" style="float:left;">
-        <?php
-
-          $url = "localhost";
-          $id = "root";
-          $password="111111";
-          $db = "earth";
-
-          $conn = mysqli_connect($url,$id,$password,$db);
-
-          $sql="select * from product";
-          $result=mysqli_query($conn,$sql);
-          $num=mysqli_num_rows($result);
-
-          for($i=0;$i<$num;$i++) {
-
-          $re=mysqli_fetch_array($result);
-
-
-          ?>
-          <div class="slider" style = "padding-right: 20px; margin-top : 30px; float:left; padding-left:100px;" >
+          <div class="slider" style = "padding-right: 20px; margin-top : 30px; float:left;" >
               <a href='pduct.php?idx=<?php echo $re[0]; ?>'  style="text-decoration: none;">        
                 <img src="<?php echo $re[6]?>" onmouseover="this.src='<?php echo $re[7]?>'" onmouseout="this.src='<?php echo $re[6]?>'" style="width: 256px;"><br>
                 <span class = "slider_menu_txt1"><?php echo $re[1]?><span class="slider_menu_price1"><br><?php echo $re[4]?></span></span>
@@ -122,8 +135,7 @@
               </a>
             </div>
           </div>
-          <?php } ?>
-    </div>
+    </div>-->
     
       
 </body>
