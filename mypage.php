@@ -98,26 +98,6 @@
             </a>
         </div>
     </nav>
-
-    <div class = "mypage_menu_box">
-      <div>
-        <ul style = "float: left;">
-          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">주문 조회</a></li>
-          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">위시 리스트</a></li>
-          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">취소/교환/반품</a></li>
-          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">쿠폰</a></li>
-          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">포인트</a></li>
-          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">1:1 문의</a></li>
-          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">정보 수정</a></li>
-          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">회원 탈퇴</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!--프로필 이미지-->
-    <div class = "mypage_profile_box">
-          <img src="https://www.jigushop.co.kr/common/img/default_profile.png" alt="" class = "mypage_profile_img">
-    </div>
     <?php
 
     $url = "localhost";
@@ -137,6 +117,25 @@
 
 
     ?>
+    <div class = "mypage_menu_box">
+      <div>
+        <ul style = "float: left;">
+          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">주문 조회</a></li>
+          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">위시 리스트</a></li>
+          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">취소/교환/반품</a></li>
+          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">쿠폰</a></li>
+          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">포인트</a></li>
+          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">1:1 문의</a></li>
+          <li><a href="changeinfo.php?idx=<?php echo $re[0]; ?>" style = "text-decoration: none;" class = "mypage_menu_list">정보 수정</a></li>
+          <li><a href="" style = "text-decoration: none;" class = "mypage_menu_list">회원 탈퇴</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--프로필 이미지-->
+    <div class = "mypage_profile_box">
+          <img src="https://www.jigushop.co.kr/common/img/default_profile.png" alt="" class = "mypage_profile_img">
+    </div>
     <div class = "mypage_profile_info">
       <span class = "eco_lover"><b>Eco Lover</b></span>
       <span class = "people_hello"><?php echo $re[1] ?> 님 안녕하세요.</span><br>
