@@ -3,9 +3,9 @@
 session_start();
 
 $url = "localhost";
-$id = "root";
-$password="111111";
-$db = "earth";
+$id = "rashop";
+$password="01l3KL2tHqiIx61T";
+$db = "rashop";
 
 $conn = mysqli_connect($url,$id,$password,$db);
 
@@ -16,10 +16,7 @@ $conn = mysqli_connect($url,$id,$password,$db);
 
         $sql="SELECT * FROM user where uid='$uid'&&pw='$upw'";
         if($result=mysqli_fetch_array(mysqli_query($conn,$sql))){
-          // $sql="SELECT name FROM user where uid='$uid'";
-          // $uname=mysqli_fetch_array(mysqli_query($conn,$sql))
           $_SESSION['user_id'] = $uid;
-          // $_SESSION['user_name'] = $uname;
           echo "<script>alert('로그인 되었습니다.');</script>";
           ?>
           <meta http-equiv="refresh" content="1;url=../index.php">

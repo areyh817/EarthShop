@@ -1,9 +1,8 @@
 <?php
-echo "값 들어오는지 확인";
 $url = "localhost";
-$id = "root";
-$password="111111";
-$db = "earth";
+$id = "rashop";
+$password="01l3KL2tHqiIx61T";
+$db = "rashop";
 
 $conn = mysqli_connect($url,$id,$password,$db);
 
@@ -16,7 +15,5 @@ $ugender = $_POST["gender"];
 
 $sql = "insert into user(name, uid, pw, gender) values('$uname', '$uid', '$upw', '$ugender')";
 mysqli_query($conn, $sql);
-
-
-
 ?>
+<meta http-equiv="refresh" content="1;url=../index.php">

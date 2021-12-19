@@ -34,9 +34,9 @@
         session_start();
 
         $url = "localhost";
-        $id = "root";
-        $password="111111";
-        $db = "earth";
+        $id = "rashop";
+        $password="01l3KL2tHqiIx61T";
+        $db = "rashop";
 
         $conn = mysqli_connect($url,$id,$password,$db);
 
@@ -101,9 +101,9 @@
     <?php
 
     $url = "localhost";
-    $id = "root";
-    $password="111111";
-    $db = "earth";
+    $id = "rashop";
+    $password="01l3KL2tHqiIx61T";
+    $db = "rashop";
 
     $conn = mysqli_connect($url,$id,$password,$db);
     $userid = $_SESSION['user_id'];
